@@ -7,7 +7,7 @@ This template aims to be a learning experience for those looking to learn about 
 Once you get the hang of things, checkout [discord.js](https://discord.js.org/#/docs/main/stable/general/welcome) to expand your knowldge regarding communicating with Discord.
 
 ## Setup Development Discord Server
-It's recommended that you make a new Discrod server to use as a staging/development environment for your bot.
+I recommend that you make a new Discrod server to use as a staging/development environment for your bot.
 
 ## Create Discord Application 
 1. Go to the [Discord Application Page](https://discord.com/developers/applications/) and create a new application.
