@@ -115,20 +115,14 @@ There's this service that comes up first in Google called Pebble Host and it was
 
 <hr />
 
-#### 👀 Templates
-I like to write templates and architect things. If you liked this one, check out more below.
+#### 👀 [Templates]()
+I like to write templates and architect things. If you liked this one, check out more.
 
-[View All Templates]()
-
-#### 💡 Tutorials
+#### 💡 [Tutorials]()
 I make them when I have can. 
 
-[YouTube]()
-
-#### 📝 My Configs
+#### 📝 [My Configs](https://github.com/qudo-lucas/project-boilerplate--config-only)
 Config files I use across projects such as ESlist, Stylelint, Babel config and VSCode settings.
-
-[Configs Repo](https://github.com/qudo-lucas/project-boilerplate--config-only)
 
 #### 💬 Socials
 Always down to chat if you need help.
