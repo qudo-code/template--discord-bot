@@ -10,7 +10,11 @@ Once you get the hang of things, checkout [discord.js](https://discord.js.org/#/
 I recommend that you make a new Discrod server to use as a staging/development environment for your bot.
 
 ## Create Discord Application 
-1. Go to the [Discord Application Page](https://discord.com/developers/applications/) and create a new application.
+This is where we define what our bot will look like and what it's called.
+
+[Discord Application Page](https://discord.com/developers/applications/)
+
+1. Go to the Application Page and create a new application.
 2. Navigate to the bot tab within your application and make a new bot as well.
 3. Create a `.env` in the root of your project and add your bots token like below. 
 
@@ -25,9 +29,9 @@ DISCORD_BOT_TOKEN="bot token"
 
 `https://discord.com/api/oauth2/authorize?client_id=CLIENT_ID&permissions=8&scope=bot%20applications.commands`
 
-Here's the template for Discord bot invite links. Just replace `CLIENT_ID` with the one located under the applications Discrod Developer OAuth tab.
+Here's the template for Discord bot invite links. Just replace `CLIENT_ID` with the one located under the applications Discord Developer OAuth tab.
 
-***Note:** To reduce initial friction to just get something up and running, by default the bot requests full admin permissions, see `permissions=8` in the URL. If you want to set custom permissions, Discord has a UI for generating permissions integers at the bottom of the Discrod Developer Bot tab.*
+***Note:** To reduce initial friction to get something up and running, by default the bot requests full admin permissions, see `permissions=8` in the URL. If you want to set custom permissions, Discord has a UI for generating permissions integers at the bottom of the Discrod Developer Bot tab.*
 
 ## Project Structure
 ### 📁 `commands`
@@ -84,17 +88,18 @@ module.exports = () => {
 ```
 
 ### 👢 `boot.js`
-Kicks off all functions in `/services`  and handles creating Discord `!` commands out of all the files in `/commands`.
+Called upon trigger of the clients "ready" event (see in `index.js`). Kicks off all functions in `/services`  and handles creating Discord `!` commands out of all the files in `/commands`.
 
 ## 🏃‍♂️ Run
-
-Once running, the bot should appear as online in channels that it has access to. If running locally, use `npm run dev` to kick things off.
+*If running locally, use `npm run dev` to start the bot with your provided `DISCORD_BOT_TOKEN`.*
 
 📦 **`npm install`** First time install.
 
 🛠 **`npm run dev`**: Set environment variables from `.env`, start bot, refresh bot upon file changes.
 
 🌐 **`npm start`**: Start and run bot in current environment until stopped.
+
+ Once running, the bot should appear as online in channels that it has access to.
 
 ## 🚀 Deploy
 *An opinionated blurb of how I personally handle deployments.*
