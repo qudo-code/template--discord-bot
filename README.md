@@ -102,7 +102,8 @@ module.exports = () => {
 Called upon trigger of the clients "ready" event (see in `index.js`). Kicks off all functions in `/services`  and handles creating Discord `!` commands out of all the files in `/commands`.
 
 ## 🚀 Deploy
-*An opinionated blurb of how I personally handle deployments.*
+*An opinionated blurb of how I handle deploying Discord bots.*
+
 When you're ready to release your bot into the real world, local servers just ain't gonna cut it. This app will need to be deployed somewhere that it can run continously to keep the bot online. Personally I like to use Google Cloud Platform and their service called Cloud Run.
 
 ### 🐳 Dockerfile
@@ -111,6 +112,7 @@ I setup a simple Dockerfile in this repo so you can just point GCP or something 
 2. `docker run discord-bot`
 
 🚩 **pebblehost.com**
+
 There's this service that comes up first in Google called Pebble Host and it was an absolute headache to use. They only give you an FTP server making CI/CD a pain to setup and you have to build your `package.json` with their weird UI making dependency tracking pretty terrible. You can do better. GCP would probably even be free for this project.
 
 <hr />
