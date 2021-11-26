@@ -91,7 +91,9 @@ Kicks off all functions in `/services`  and handles creating Discord `!` command
 Once running, the bot should appear as online in channels that it has access to. If running locally, use `npm run dev` to kick things off.
 
 📦 **`npm install`** First time install.
+
 🛠 **`npm run dev`**: Set environment variables from `.env`, start bot, refresh bot upon file changes.
+
 🌐 **`npm start`**: Start and run bot in current environment until stopped.
 
 ## 🚀 Deploy
