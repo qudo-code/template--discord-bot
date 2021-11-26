@@ -1,7 +1,7 @@
 # 🤖 Discord Bot
 Here is a super barebones Discord Bot template. 
 
-This template aims to be a learning experience for those looking to learn about Discord Bot development as well as a great launchpad for anyone spinning up a project. Included are a few example files and suggested code patterns I have found to be useful.
+💡 This template aims to be a learning experience for those looking to learn about Discord Bot development as well as a great launchpad for anyone spinning up a project. Included are a few example files and suggested code patterns I have found to be useful.
 
 
 Once you get the hang of things, checkout [discord.js](https://discord.js.org/#/docs/main/stable/general/welcome) to expand your knowldge regarding communicating with Discord.
