@@ -33,6 +33,17 @@ Here's the template for Discord bot invite links. Just replace `CLIENT_ID` with 
 
 ***Note:** To reduce initial friction to get something up and running, by default the bot requests full admin permissions, see `permissions=8` in the URL. If you want to set custom permissions, Discord has a UI for generating permissions integers at the bottom of the Discrod Developer Bot tab.*
 
+## 🏃‍♂️ Run
+*If running locally, use `npm run dev` to start the bot with your provided `DISCORD_BOT_TOKEN`.*
+
+📦 **`npm install`** First time install.
+
+🛠 **`npm run dev`** Set environment variables from `.env`, start bot, refresh bot upon file changes.
+
+🌐 **`npm start`** Start and run bot in current environment until stopped.
+
+Once running, the bot should appear as online in channels that it has access to.
+
 ## Project Structure
 ### 📁 `commands`
 Files in this directory will be automatically turned into `!` commands like `!dosomething`. Each command file should export a function which can optionally recieve the client and message objects. 
@@ -89,17 +100,6 @@ module.exports = () => {
 
 ### 👢 `boot.js`
 Called upon trigger of the clients "ready" event (see in `index.js`). Kicks off all functions in `/services`  and handles creating Discord `!` commands out of all the files in `/commands`.
-
-## 🏃‍♂️ Run
-*If running locally, use `npm run dev` to start the bot with your provided `DISCORD_BOT_TOKEN`.*
-
-📦 **`npm install`** First time install.
-
-🛠 **`npm run dev`** Set environment variables from `.env`, start bot, refresh bot upon file changes.
-
-🌐 **`npm start`** Start and run bot in current environment until stopped.
-
- Once running, the bot should appear as online in channels that it has access to.
 
 ## 🚀 Deploy
 *An opinionated blurb of how I personally handle deployments.*
