@@ -95,9 +95,9 @@ Called upon trigger of the clients "ready" event (see in `index.js`). Kicks off 
 
 📦 **`npm install`** First time install.
 
-🛠 **`npm run dev`**: Set environment variables from `.env`, start bot, refresh bot upon file changes.
+🛠 **`npm run dev`** Set environment variables from `.env`, start bot, refresh bot upon file changes.
 
-🌐 **`npm start`**: Start and run bot in current environment until stopped.
+🌐 **`npm start`** Start and run bot in current environment until stopped.
 
  Once running, the bot should appear as online in channels that it has access to.
 
