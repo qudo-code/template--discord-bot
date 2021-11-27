@@ -13,5 +13,5 @@ module.exports = async (client) => {
         console.log(`- ${file}`);
         
         serviceFunction(client);
-    })
+    });
 }
