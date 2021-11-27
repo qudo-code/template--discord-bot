@@ -23,18 +23,20 @@ This is where we define what our bot will look like and what it's called.
 DISCORD_BOT_TOKEN="bot token"
 ```
 
-🎉 That's it! Now you have a Discord bot and a place to invite it to.
+🎉 That's it! Now you have a Discord bot and a place to invite it.
 
 ## Add Bot To Discord Server
 
 `https://discord.com/api/oauth2/authorize?client_id=CLIENT_ID&permissions=8&scope=bot%20applications.commands`
 
-Here's the template for Discord bot invite links. Just replace `CLIENT_ID` with the one located under the applications Discord Developer OAuth tab.
+Here's the template for Discord bot invite links. Just replace `CLIENT_ID` with the one located at [Discord Application Page](https://discord.com/developers/applications/) under the OAuth tab.
 
-***Note:** To reduce initial friction to get something up and running, by default the bot requests full admin permissions, see `permissions=8` in the URL. If you want to set custom permissions, Discord has a UI for generating permissions integers at the bottom of the Discrod Developer Bot tab.*
+***⚠️ Note:** To reduce initial friction to get something up and running, by default the bot requests full admin permissions, see `permissions=8` in the URL. If you want to set custom permissions, Discord has a UI for generating permissions integers at the bottom of the Bot tab in the [Discord Application Page](https://discord.com/developers/applications/).*
 
 ## 🏃‍♂️ Run
 *If running locally, use `npm run dev` to start the bot with your provided `DISCORD_BOT_TOKEN`.*
+
+*If running in prod, make sure `DISCORD_BOT_TOKEN` is defined as an environment variable before you run `npm start`.*
 
 📦 **`npm install`** First time install.
 
@@ -49,7 +51,7 @@ Once running, the bot should appear as online in channels that it has access to.
 Files in this directory will be automatically turned into `!` commands like `!dosomething`. Each command file should export a function which can optionally recieve the client and message objects. 
 
 #### Example
-This example is included in the project by default. Try it by running `!smile` in a channel the bot has access to.
+This example is included in the template by default. Try it by running `!smile` in a channel the bot has access to.
 **File:** `./commands/smile.js`
 **Usage in Discord:** `!smile`
 ```javascript
@@ -74,7 +76,7 @@ module.exports = (client, message) => {
 Fire and forget functions to be kicked off at boot.
 
 #### Example
-A service that updates the Discords status message every second with a new word. Included in template.
+A service that updates the Discords status message every second with a new word. This is included in the template by default, so if your bot is running you should see it happening. 
 
 ```javascript
 module.exports = () => {
@@ -117,18 +119,6 @@ There's this service that comes up first in Google called Pebble Host and it was
 
 <hr />
 
-#### 👀 [Templates]()
-I like to write templates and architect things. If you liked this one, check out more.
-
-#### 💡 [Tutorials]()
-I make them when I have can. 
-
-#### 📝 [My Configs](https://github.com/qudo-lucas/project-boilerplate--config-only)
-Config files I use across projects such as ESlist, Stylelint, Babel config and VSCode settings.
-
-#### 💬 Socials
-Always down to chat if you need help.
-
+**More Templates:** [GitHub Profile](https://github.com/qudo-code)
 **Discord:** `qudo#0288`
 
-**Twitter:** [@qudolucas](https://twitter.com/qudolucas)
