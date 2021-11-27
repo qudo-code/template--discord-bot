@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = (client) => {
     let currentWord = 0;
 
     const words = [
@@ -8,12 +8,12 @@ module.exports = () => {
     ];
 
     setInterval(() => {
-        if(currentWord >= words - 1) {
+        if(currentWord < words.length) {
             currentWord = 0;
         }
 
-        client.user.setActivity(words[currentWord], { type : "WATCHING" });
+        client.user.setActivity(words[currentWord], { type : "PLAYING" });
 
         currentWord += 1;
-    }, 1000)
+    }, 3000);
 }

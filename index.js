@@ -1,7 +1,5 @@
 // Require the necessary discord.js classes
 const { Client } = require("discord.js");
-
-// Do this when app is ready
 const boot = require("./boot.js");
 
 const {
@@ -16,7 +14,7 @@ if(!DISCORD_BOT_TOKEN) {
 const client = new Client({ intents : [ "GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES" ] });
 
 // Kick off services, start message listener
-client.on("ready", () => boot(client));
+client.on("ready", boot);
 
 // Login to Discord with your client's token
 client.login(DISCORD_BOT_TOKEN);
