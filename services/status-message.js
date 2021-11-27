@@ -8,7 +8,7 @@ module.exports = (client) => {
     ];
 
     setInterval(() => {
-        if(currentWord < words.length) {
+        if(currentWord >= words.length) {
             currentWord = 0;
         }
 
@@ -16,4 +16,4 @@ module.exports = (client) => {
 
         currentWord += 1;
     }, 3000);
-}
+};
