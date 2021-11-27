@@ -79,7 +79,7 @@ Fire and forget functions to be kicked off at boot.
 A service that updates the Discords status message every second with a new word. This is included in the template by default, so if your bot is running you should see it happening. 
 
 ```javascript
-module.exports = () => {
+module.exports = (client) => {
     let currentWord = 0;
 
     const words = [
@@ -89,14 +89,14 @@ module.exports = () => {
     ];
 
     setInterval(() => {
-        if(currentWord >= words - 1) {
+        if(currentWord < words.length) {
             currentWord = 0;
         }
 
-        client.user.setActivity(words[currentWord], { type : "WATCHING" });
+        client.user.setActivity(words[currentWord], { type : "PLAYING" });
 
         currentWord += 1;
-    }, 1000)
+    }, 3000);
 }
 ```
 
