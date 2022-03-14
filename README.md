@@ -106,7 +106,7 @@ Called upon trigger of the clients "ready" event (see in `index.js`). Kicks off 
 ## 🚀 Deploy
 *An opinionated blurb of how I handle deploying Discord bots.*
 
-When you're ready to release your bot into the real world, local servers just ain't gonna cut it. This app will need to be deployed somewhere that it can run continously to keep the bot online. Personally I like to use Google Cloud Platform and their service called Cloud Run.
+When you're ready to release your bot into the real world, local servers just ain't gonna cut it. This app will need to be deployed somewhere that it can run continously to keep the bot online. Personally I like to use Heroku or Google Cloud Platform and their service called Cloud Run.
 
 ### 🐳 Dockerfile
 I setup a simple Dockerfile in this repo so you can just point GCP or something like it to this project and it's all ready to deploy. If you have Docker installed, you can build it and start it with the following.
